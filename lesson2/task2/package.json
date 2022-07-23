@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "babel ./src --out-dir=./dist"
+    "build:scripts": "babel ./src --out-dir=./dist",
+    "clean": "rm -rf dist",
+    "build": "npm-run-all clean build:scripts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.18.9",
     "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.18.9"
+    "@babel/preset-env": "^7.18.9",
+    "npm-run-all": "^4.1.5"
   }
 }
