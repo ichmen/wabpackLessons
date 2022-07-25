@@ -10,7 +10,7 @@ module.exports = {
           {
             loader: "url-loader",
             options: {
-              limit: 8024,
+              limit: 8192,
               name: "[name].[ext]",
               outputPath: "images",
             },
